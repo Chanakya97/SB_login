@@ -8,17 +8,16 @@
 	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Dashboard</title>
+<title>Edit</title>
 </head>
 <body>
 <div ng-app="">
 <form method="post" action="insert">
 <a href="/show">Show users</a><br/>
-<a href="/login">Login</a><br/>
 <input type="hidden" name="id" value="${user.id}"/><br/>
 Username:<input type="text" name="username" value="${user.username}"/><br/>
 Password:<input type="password" name="password" value="${user.password}"/><br/>
-<input type="submit"/>
+<input type="submit" value="Update"/>
 
 </form>
 </div>
